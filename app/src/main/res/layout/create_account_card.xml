@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+
+
+    android:padding="8dp"
+    app:cardCornerRadius="8dp"
+    card_view:cardBackgroundColor="#CAF5D0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_margin="16dp">
+
+
+        <TextView
+            android:id="@+id/title_create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_marginRight="16dp"
+            android:text="Create an account to save your progress\n It's free and only takes a minute! ;)"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/create_account_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/title_create_account"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:elevation="0dp"
+            android:text="Create account"
+            android:textSize="12sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_create_account"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/create_account_button"
+            android:text="or"
+            android:textColor="@android:color/holo_green_light" />
+
+        <TextView
+            android:id="@+id/tv_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_create_account"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/tv_or"
+            android:text="Sign In"
+            android:textColor="@android:color/holo_green_light" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
