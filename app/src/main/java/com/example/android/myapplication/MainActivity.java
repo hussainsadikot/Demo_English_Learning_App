@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onButtonClick(int position) {
                 Toast.makeText(MainActivity.this, "Go to List of Words", Toast.LENGTH_SHORT).show();
-//                startActivity(new Intent(MainActivity.this,Main2Activity.class));
+                startActivity(new Intent(MainActivity.this,Main2Activity.class));
             }
         });
         recyclerView.setAdapter(topicAdapter);
